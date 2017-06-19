@@ -1,5 +1,5 @@
 
-![Screenshot](img/basisdata1.png)
+![Screenshot](img/basisdata.png)
 
 # **PEMBELAJARAN MAGANG PT LINTANG KAWURYAN MALANG**
 ***
@@ -79,9 +79,9 @@ MkDocs
 
 * [Web Server](menu/web_server/webServer.md)
 
-Apache 
+Panduan Installasi 
 
-* [Apache](menu/web_server/apache.md)
+* [Panduan Installasi](menu/web_server/apache.md)
 
 Website
 
