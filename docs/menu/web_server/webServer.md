@@ -40,10 +40,17 @@ Fitur - fitur standar web server :
 ## **B. Cara Kerja**
 ![Screenshot](img/img_webServer/a1.png) 
 
-Yang dapat kita tarik dari gambar di atas :
+Cara Kerja :
 
-* Web Server  yang berhadapan langsung dengan pengguna, menerima HTTP Request dan mengembalikan HTTP Response.
-* Untuk konten statis seperti CSS, Javascript, gambar, maupun HTML web server dapat langsung menyajikannya sebagai HTTP Response kepada pengguna.
-* Konten dinamis seperti program PHP maupun Perl disajikan melalui CGI.
-* CGI Script kemudian menghasilkan HTML atau konten statis lainnya yang akan disajikan sebagai HTTP Response kepada pengguna.
+1. Client mengakses suatu website berupa URL melalui web browser
+
+2. Mengirim http request URL melalui internet dan mengirimkan domain ke DNS
+
+3. DNS menterjemahkan domain name ke alamat IP lalu mengirimkan 
+
+4. Dan terhubung ke web server melalui jaringan (intranet atau internet).
+
+5. Web server menerima permintaan (request) dari client, dan
+
+6. Web server Mengirimkan apa yang diminta oleh client (response).
 
