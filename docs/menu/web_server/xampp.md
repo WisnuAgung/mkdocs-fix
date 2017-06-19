@@ -3,7 +3,7 @@
 
 ## **A. Penjelasan**
 
-adalah perangkat lunak ( free software) bebas, yang mendukung untuk banyak sistem operasi, yang  merupakan kompilasi dari beberapa program.
+XAMPP adalah perangkat lunak ( free software) bebas, yang mendukung untuk banyak sistem operasi, yang  merupakan kompilasi dari beberapa program.
 Fungsi XAMPP sendiri adalah sebagai server yang berdiri sendiri (localhost), yang terdiri beberapa program antara lain : Apache HTTP Server, MySQL database, dan penerjemah bahasa yang ditulis dengan bahasa pemrograman PHP dan Perl.
 
 a. Komponen- komponen XAMPP, yaitu :
