@@ -1,0 +1,113 @@
+site_name: Dokumentasi Magang
+site_favicon: favicon.ico
+
+extra_css: [extra.css]
+repo_name: 'Github'
+repo_url: 'https://github.com/WisnuAgung/mkdocs-fix'
+copyright: 'Copyright &copy; 2017 - 2018 LKawuryan06'
+
+theme : material
+markdown_extensions :
+  - codehilite
+extra:
+  logo: 'img/logo.png'
+  palette:
+    primary: 'pink'
+    accent: 'light-blue'
+  social:
+    - type: 'github'
+      link: 'https://github.com/WisnuAgung'
+    - type: 'github'
+      link: 'https://twitter.com/hildaaakh'
+    - type: 'github'
+      link: 'https://twitter.com/KresnaNugraha'
+    - type: 'github'
+      link: 'https://twitter.com/harendarizqi'
+    - type: 'github'
+      link: 'https://twitter.com/fatmazahrotun9'
+    - type: 'github'
+      link: 'https://twitter.com/zhomyvic'
+
+pages:
+- Home                        : index.md
+- Tes Magang: 
+    - 'Home'                  : 'menu/tes_magang/tesMagang.md'
+- SQL:  
+    - 'Home'                  : 'menu/sql/indexsql.md'
+    - 'SQL Select'            : 'menu/sql/sql_select.md'
+    - 'SQL Select Distinct'   : 'menu/sql/sql_selectDistinct.md'
+    - 'SQL Where'             : 'menu/sql/sql_where.md'
+    - 'SQL And, Or, Not'      : 'menu/sql/sql_andOrNot.md'
+    - 'SQL Order By'          : 'menu/sql/sql_orderBy.md'
+    - 'SQL Alias'             : 'menu/sql/sql_aliases.md'
+    - 'SQL Join'              : 'menu/sql/sql_joinTabel.md'
+    - 'SQL Inner Join'        : 'menu/sql/sql_innerJoin.md'
+    - 'SQL Left Join'         : 'menu/sql/sql_leftJoin.md'
+    - 'SQL Right Join'        : 'menu/sql/sql_rightJoin.md'
+    - 'SQL Fungsi'            : 'menu/sql/sql_fungsi.md'
+    - 'SQL Fungsi Tanggal'    : 'menu/sql/sql_fungsiTanggal.md'
+    - 'SQL Operator'          : 'menu/sql/sql_operator.md'
+- PHP:
+    - 'Home'                  : 'menu/php/php.md'
+    - 'Prosedur dan Fungsi'   : 'menu/php/prosedurFungsi.md'
+    - 'Increment'             : 'menu/php/increment.md'
+    - 'PSR'                   : 'menu/php/psr.md'
+    - Looping:
+        - 'Home'              : 'menu/php/looping/looping.md'
+        - 'For'               : 'menu/php/looping/for.md'
+        - 'While'             : 'menu/php/looping/while.md'
+        - 'Do While'          : 'menu/php/looping/doWhile.md'
+        - 'Foreach'           : 'menu/php/looping/foreach.md'
+    - Keyword PHP:
+        - 'Home'              : 'menu/php/keyword_php/keywordPhp.md'
+        - 'And'               : 'menu/php/keyword_php/keywordPhp_and.md'
+        - 'Array'             : 'menu/php/keyword_php/keywordPhp_array.md'
+        - 'Break'             : 'menu/php/keyword_php/keywordPhp_break.md'
+        - 'Catch'             : 'menu/php/keyword_php/keywordPhp_catch.md'
+        - 'Class'             : 'menu/php/keyword_php/keywordPhp_class.md'
+        - 'Continue'          : 'menu/php/keyword_php/keywordPhp_continue.md'
+        - 'Do While'          : 'menu/php/keyword_php/keywordPhp_doWhile.md'
+        - 'Echo'              : 'menu/php/keyword_php/keywordPhp_echo.md'
+        - 'Extends'           : 'menu/php/keyword_php/keywordPhp_extends.md'
+        - 'For'               : 'menu/php/keyword_php/keywordPhp_for.md'
+        - 'Foreach'           : 'menu/php/keyword_php/keywordPhp_foreach.md'
+        - 'Function'          : 'menu/php/keyword_php/keywordPhp_function.md'
+        - 'If'                : 'menu/php/keyword_php/keywordPhp_if.md'
+        - 'If else'           : 'menu/php/keyword_php/keywordPhp_ifElse.md'
+        - 'If elseif else'    : 'menu/php/keyword_php/keywordPhp_ifElseifElse.md'
+        - 'Include'           : 'menu/php/keyword_php/keywordPhp_include.md'
+        - 'Isset'             : 'menu/php/keyword_php/keywordPhp_isset.md'
+        - 'Or'                : 'menu/php/keyword_php/keywordPhp_or.md'
+        - 'Print'             : 'menu/php/keyword_php/keywordPhp_print.md'
+        - 'Private'           : 'menu/php/keyword_php/keywordPhp_private.md'
+        - 'Protected'         : 'menu/php/keyword_php/keywordPhp_protected.md'
+        - 'Public'            : 'menu/php/keyword_php/keywordPhp_public.md'
+        - 'Requence'          : 'menu/php/keyword_php/keywordPhp_requence.md'
+        - 'Require'           : 'menu/php/keyword_php/keywordPhp_require.md'
+        - 'Require once'      : 'menu/php/keyword_php/keywordPhp_requireOnce.md'
+        - 'Return'            : 'menu/php/keyword_php/keywordPhp_return.md'
+        - 'Static'            : 'menu/php/keyword_php/keywordPhp_static.md'
+        - 'Switch'            : 'menu/php/keyword_php/keywordPhp_switch.md'
+        - 'Try'               : 'menu/php/keyword_php/keywordPhp_try.md'
+        - 'Unset'             : 'menu/php/keyword_php/keywordPhp_unset.md'
+        - 'While'             : 'menu/php/keyword_php/keywordPhp_while.md'
+    - OOP:
+        - 'Home'              : 'menu/php/oop/oop.md'
+- Dokumen Generator:
+    - 'Home'                  : 'menu/dokumen_generator/dokumenGenerator.md'
+    - 'MkDocs'                : 'menu/dokumen_generator/mkdocs.md'
+- Web Server:
+    - 'Home'                  : 'menu/web_server/webServer.md'
+    - 'Apache'                : 'menu/web_server/apache.md'
+    - 'Website'               : 'menu/web_server/website.md'
+    - 'XAMPP'                 : 'menu/web_server/xampp.md'
+- Virtual Box:
+    - 'Home'                  : 'menu/virtual_box/virtualBox.md'
+- Linux Ubuntu:
+    - 'Home'                  : 'menu/linux_ubuntu/linuxUbuntu.md'
+    - 'CommandLine'           : 'menu/linux_ubuntu/commandLine.md'
+- GitHub:
+    - 'Home'                  : 'menu/github/github.md'
+- Laravel:
+    - 'Home'                  : 'menu/laravel/laravel.md'
+
