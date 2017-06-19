@@ -72,34 +72,3 @@ Untuk tahap selanjutnya, klik add lagi untuk membuat partisi ubuntu. untuk kali 
 ![Screenshot](img/img_linuxUbuntu/d9.png)
 
 Untuk tahap ini tinggal menekan tombol Install Now dan ikuti langkah-langkah install-nya hingga selesai.
-
-### Install PHP
-**Tutorial install PHP di Linux Ubuntu 16.04 desktop dengan virtual box :**
-
-1. Kita login terlebih dahulu pada Linux
-![Screenshot](img/img_linuxUbuntu/b1.png)
-
-2. Berikut tampilan program Linux
-![Screenshot](img/img_linuxUbuntu/b2.png)
-
-3. Lalu tekan tombol windows pada keyboard dan ketikkan terminal.Terminal di Linux seperti cmd pada Windows
-![Screenshot](img/img_linuxUbuntu/b3.png)
-
-4. Setelah itu akan muncul seperti berikut dan ketikkan $sudo apt- get install apache2.Ini adalah perintah untuk menginstall apache yang dimana apache ini akan berhubungan dengan php.
-![Screenshot](img/img_linuxUbuntu/b4.png)
-
-5. Setelah itu Enter dan akan muncul perintah masukkan password. Silahkan isikan password yang sebelumnya sudah kalian buat.
-![Screenshot](img/img_linuxUbuntu/b5.png)
-
-6. Setelah itu Enter lagi.Kemudian ketikkan $ sudo install mysql-server untuk menginstall my sql karena my sql juga berhubungan  dengan php yang berkaitan menghubungkan database.
-![Screenshot](img/img_linuxUbuntu/b6.png)
-
-7. Lalu Enter lagi.Ketikkan Y untuk menjawab pertanyaan seperti pada gambar berikut.  
-![Screenshot](img/img_linuxUbuntu/b7.png)
-
-8. Kemudian saatnya menginstall php dengan cara ketikkan $ sudo apt- get install php dan kemudian Enter lagi.
-![Screenshot](img/img_linuxUbuntu/b8.png)
-
-9. Kemudian ketikkan localhost pada browser dan jalankan.
-![Screenshot](img/img_linuxUbuntu/b9.png)
-***
