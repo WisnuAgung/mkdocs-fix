@@ -66,5 +66,6 @@ theme: 'material'
 
 ## License
 
-Copyright (c) 2017-2018 LKawuryan
+Copyright (c) 2017-2018 
+-Anak Magang LKawuryan-
 
