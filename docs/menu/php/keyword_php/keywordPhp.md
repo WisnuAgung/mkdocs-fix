@@ -50,11 +50,11 @@
 |   [include](keywordPhp_include.md)               | Berfungsi untuk suatu perintah atau fungsi di dalam pemrograman PHP untuk|
 |						       | menyisipkan sebuah file PHP ke dalam file PHP lainnya, tapi jika salah   |
 |						       | peletakan lokasi maka file akan tetap dijalankan denan mengabaikan error | 
-|   [require](eywordPhp_require.md)               | Berfungsi untuk suatu perintah atau fungsi di dalam pemrograman PHP untuk|
+|   [require](keywordPhp_require.md)               | Berfungsi untuk suatu perintah atau fungsi di dalam pemrograman PHP untuk|
 |						       | menyisipkan sebuah file PHP ke dalam file PHP lainnya, tapi jika salah   |
 |						       | peletakan lokasi maka isi dari file tidak akan dilanjutkan dan akan 	  |
 |						       | dihentikan penyisipannya pada letak error                 		  | 
-|   [require_once](keywordPhp_require_once.md)     | Berfungsi untuk penyisipan hanya dipanggil sekali saja                   | 
+|   [require_once](keywordPhp_requireOnce.md)     | Berfungsi untuk penyisipan hanya dipanggil sekali saja                   | 
 |   [isset](keywordPhp_isset.md)                   | Berfungsi untuk menyatakan variabel sudah diset atau tidak. Jika variabel|
 |						       | sudah diset makan variavel akan mengembalikan nilai true, sebaliknya akan|
 |						       | bernilai false                                                           | 
