@@ -1,8 +1,7 @@
 site_name: Dokumentasi Magang
 site_favicon: favicon.ico
-
 extra_css: [extra.css]
-repo_name: 'Github'
+repo_name: 'LKawuryan06'
 repo_url: 'https://github.com/WisnuAgung/mkdocs-fix'
 copyright: 'Copyright &copy; 2017 - 2018 LKawuryan06'
 
@@ -10,7 +9,6 @@ theme : material
 markdown_extensions :
   - codehilite
 extra:
-  logo: 'img/logo.png'
   palette:
     primary: 'pink'
     accent: 'light-blue'
@@ -82,7 +80,6 @@ pages:
         - 'Private'           : 'menu/php/keyword_php/keywordPhp_private.md'
         - 'Protected'         : 'menu/php/keyword_php/keywordPhp_protected.md'
         - 'Public'            : 'menu/php/keyword_php/keywordPhp_public.md'
-        - 'Requence'          : 'menu/php/keyword_php/keywordPhp_requence.md'
         - 'Require'           : 'menu/php/keyword_php/keywordPhp_require.md'
         - 'Require once'      : 'menu/php/keyword_php/keywordPhp_requireOnce.md'
         - 'Return'            : 'menu/php/keyword_php/keywordPhp_return.md'
