@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/menu/tes_magang/tesMagang/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/sql/indexsql/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_select/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_selectDistinct/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_where/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_andOrNot/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_orderBy/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_aliases/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_joinTabel/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_innerJoin/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_leftJoin/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_rightJoin/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_fungsi/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_fungsiTanggal/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/sql/sql_operator/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/php/php/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/php/prosedurFungsi/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/php/increment/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/php/psr/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/dokumen_generator/dokumenGenerator/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/dokumen_generator/mkdocs/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/web_server/webServer/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/web_server/apache/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/web_server/website/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/web_server/xampp/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/virtual_box/virtualBox/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/linux_ubuntu/linuxUbuntu/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/menu/linux_ubuntu/commandLine/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/github/github/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/menu/laravel/laravel/</loc>
+     <lastmod>2017-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>
