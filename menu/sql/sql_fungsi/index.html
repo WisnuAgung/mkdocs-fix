@@ -1,0 +1,1706 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../../../favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.3">
+    
+    
+      
+        <title>SQL Fungsi - Dokumentasi Magang</title>
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-acc56dad49.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-8817cfa535.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="pink" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../../.." title="Dokumentasi Magang" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  SQL
+                </span>
+              
+            
+            SQL Fungsi
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/WisnuAgung/mkdocs-fix" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      LKawuryan06
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Dokumentasi Magang
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/WisnuAgung/mkdocs-fix" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      LKawuryan06
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Tes Magang
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Tes Magang
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tes_magang/tesMagang/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      SQL
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        SQL
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../indexsql/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_select/" title="SQL Select" class="md-nav__link">
+      SQL Select
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_selectDistinct/" title="SQL Select Distinct" class="md-nav__link">
+      SQL Select Distinct
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_where/" title="SQL Where" class="md-nav__link">
+      SQL Where
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_andOrNot/" title="SQL And, Or, Not" class="md-nav__link">
+      SQL And, Or, Not
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_orderBy/" title="SQL Order By" class="md-nav__link">
+      SQL Order By
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_aliases/" title="SQL Alias" class="md-nav__link">
+      SQL Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_joinTabel/" title="SQL Join" class="md-nav__link">
+      SQL Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_innerJoin/" title="SQL Inner Join" class="md-nav__link">
+      SQL Inner Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_leftJoin/" title="SQL Left Join" class="md-nav__link">
+      SQL Left Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_rightJoin/" title="SQL Right Join" class="md-nav__link">
+      SQL Right Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SQL Fungsi
+      </label>
+    
+    <a href="./" title="SQL Fungsi" class="md-nav__link md-nav__link--active">
+      SQL Fungsi
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-penjelasan" title="A. Penjelasan" class="md-nav__link">
+    A. Penjelasan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-implementasi" title="B. Implementasi" class="md-nav__link">
+    B. Implementasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case" title="Contoh Case" class="md-nav__link">
+    Contoh Case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_fungsiTanggal/" title="SQL Fungsi Tanggal" class="md-nav__link">
+      SQL Fungsi Tanggal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_operator/" title="SQL Operator" class="md-nav__link">
+      SQL Operator
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      PHP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        PHP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/php/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/prosedurFungsi/" title="Prosedur dan Fungsi" class="md-nav__link">
+      Prosedur dan Fungsi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/increment/" title="Increment" class="md-nav__link">
+      Increment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/psr/" title="PSR" class="md-nav__link">
+      PSR
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Looping
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Looping
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/looping/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/for/" title="For" class="md-nav__link">
+      For
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/while/" title="While" class="md-nav__link">
+      While
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/doWhile/" title="Do While" class="md-nav__link">
+      Do While
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/foreach/" title="Foreach" class="md-nav__link">
+      Foreach
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Keyword PHP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Keyword PHP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_and/" title="And" class="md-nav__link">
+      And
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_array/" title="Array" class="md-nav__link">
+      Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_break/" title="Break" class="md-nav__link">
+      Break
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_catch/" title="Catch" class="md-nav__link">
+      Catch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_class/" title="Class" class="md-nav__link">
+      Class
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_continue/" title="Continue" class="md-nav__link">
+      Continue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_doWhile/" title="Do While" class="md-nav__link">
+      Do While
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_echo/" title="Echo" class="md-nav__link">
+      Echo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_extends/" title="Extends" class="md-nav__link">
+      Extends
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_for/" title="For" class="md-nav__link">
+      For
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_foreach/" title="Foreach" class="md-nav__link">
+      Foreach
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_function/" title="Function" class="md-nav__link">
+      Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_if/" title="If" class="md-nav__link">
+      If
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_ifElse/" title="If else" class="md-nav__link">
+      If else
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_ifElseifElse/" title="If elseif else" class="md-nav__link">
+      If elseif else
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_include/" title="Include" class="md-nav__link">
+      Include
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_isset/" title="Isset" class="md-nav__link">
+      Isset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_or/" title="Or" class="md-nav__link">
+      Or
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_print/" title="Print" class="md-nav__link">
+      Print
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_private/" title="Private" class="md-nav__link">
+      Private
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_protected/" title="Protected" class="md-nav__link">
+      Protected
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_public/" title="Public" class="md-nav__link">
+      Public
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_require/" title="Require" class="md-nav__link">
+      Require
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_requireOnce/" title="Require once" class="md-nav__link">
+      Require once
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_return/" title="Return" class="md-nav__link">
+      Return
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_static/" title="Static" class="md-nav__link">
+      Static
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_switch/" title="Switch" class="md-nav__link">
+      Switch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_try/" title="Try" class="md-nav__link">
+      Try
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_unset/" title="Unset" class="md-nav__link">
+      Unset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_while/" title="While" class="md-nav__link">
+      While
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      OOP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        OOP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/oop/oop/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dokumen Generator
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Dokumen Generator
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dokumen_generator/dokumenGenerator/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dokumen_generator/mkdocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Web Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Web Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/webServer/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/apache/" title="Apache" class="md-nav__link">
+      Apache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/website/" title="Website" class="md-nav__link">
+      Website
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/xampp/" title="XAMPP" class="md-nav__link">
+      XAMPP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Virtual Box
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Virtual Box
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../virtual_box/virtualBox/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Linux Ubuntu
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Linux Ubuntu
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../linux_ubuntu/linuxUbuntu/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../linux_ubuntu/commandLine/" title="CommandLine" class="md-nav__link">
+      CommandLine
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github/github/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Laravel
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Laravel
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../laravel/laravel/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-penjelasan" title="A. Penjelasan" class="md-nav__link">
+    A. Penjelasan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-implementasi" title="B. Implementasi" class="md-nav__link">
+    B. Implementasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case" title="Contoh Case" class="md-nav__link">
+    Contoh Case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sql-fungsi"><strong>SQL Fungsi</strong></h1>
+<hr />
+<h2 id="a-penjelasan"><strong>A. Penjelasan</strong></h2>
+<p>a. SQL Fungsi Agregasi</p>
+<p>SQL Fungsi Agregasi adalah untuk mengembalikan satu nilai, dihitung dari nilai dalam kolom.</p>
+<table>
+<thead>
+<tr>
+<th>Fungsi</th>
+<th>Kegunaan</th>
+<th>Contoh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AVG()</td>
+<td>untuk mencari rata-rata nilai</td>
+<td>SELECT AVG(harga) AS Harga_rata2 FROM order</td>
+</tr>
+<tr>
+<td>COUNT()</td>
+<td>untuk menghitung jumlah record (baris)</td>
+<td>SELECT COUNT(id) AS Jumlah_tamu FROM bukutamu</td>
+</tr>
+<tr>
+<td>FIRST()</td>
+<td>untuk mencari nilai pertama</td>
+<td>SELECT FIRST(id) from bukutamu</td>
+</tr>
+<tr>
+<td>LAST()</td>
+<td>untuk mencari nilai pertama</td>
+<td>SELECT LAST(id) from bukutamu</td>
+</tr>
+<tr>
+<td>MAX()</td>
+<td>untuk mencari nilai terakhir</td>
+<td>SELECT MAX(harga) AS Harga_termahal FROM order</td>
+</tr>
+<tr>
+<td>MIN()</td>
+<td>untuk mencari nilai terkecil</td>
+<td>SELECT MIN(harga) AS Harga_termurah FROM order</td>
+</tr>
+<tr>
+<td>ROUND()</td>
+<td>untuk membulatkan angka ke jumlah digit yang ditentukan</td>
+<td>SELECT no_mhs,ROUND(nilai,0)as nilai bulat FROM nilai</td>
+</tr>
+<tr>
+<td>SUM()</td>
+<td>untuk menghitung penjumlahan data</td>
+<td>SELECT SUM(harga) AS Harga_total FROM order</td>
+</tr>
+</tbody>
+</table>
+<p><strong>b. SQL Fungsi String</strong></p>
+<table>
+<thead>
+<tr>
+<th>Fungsi</th>
+<th>Kegunaan</th>
+<th>COntoh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CONCAT()</td>
+<td>untuk menghitung jumlah record (baris)</td>
+<td>SELECT CONCAT('Dan', 'Morgan') FROM dual</td>
+</tr>
+<tr>
+<td>LEFT()</td>
+<td>untuk mengambil nilai dari suatu string dari posisi kiri</td>
+<td>SELECT Nm_brg, Left(Nm_brg,2)</td>
+</tr>
+<tr>
+<td>LEN() / LENGTH()</td>
+<td>untuk menghitung panjang string</td>
+<td>SELECT LEN(nama) as panjang_nama FROM bukutamu</td>
+</tr>
+<tr>
+<td>LOWER() / LCASE()</td>
+<td>untuk merubah string menjadi huruf kecil seluruhnya</td>
+<td>SELECT LCASE(nama) as Nama FROM bukutamu</td>
+</tr>
+<tr>
+<td>LTRIM()</td>
+<td>untuk memotong suatu karakter pada sebelah kiri</td>
+<td>SELECT LTRIM(' Dan Morgan ') FROM dual</td>
+</tr>
+<tr>
+<td>SUBSTRING() / MID()</td>
+<td>untuk mengambil nilai suatu string dari arah kiri</td>
+<td>SELECT MID (kota,1,4) as singkatan_kota FROM</td>
+</tr>
+<tr>
+<td>REPLACE()</td>
+<td>untuk mengganti karakter / memotong string</td>
+<td>SELECT REPLACE(‘www.google.com’, ‘w’, ‘WW’)</td>
+</tr>
+<tr>
+<td>RIGHT()</td>
+<td>untuk mengambil nilai dari suatu string dari posisi kanan</td>
+<td>SELECT Nm_brg, Right(Nm_brg,2)</td>
+</tr>
+<tr>
+<td>RTRIM()</td>
+<td>untuk memotong suatu karakter pada sebelah kanan</td>
+<td>SELECT RTRIM(' Dan Morgan ') FROM dual</td>
+</tr>
+<tr>
+<td>UPPER() / UCASE()</td>
+<td>untuk merubah string menjadi huruf kapital seluruhnya</td>
+<td>SELECT UCASE(nama) as Nama FROM bukutamu</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="b-implementasi"><strong>B. Implementasi</strong></h2>
+<h3 id="contoh-case">Contoh Case</h3>
+<ul>
+<li>
+<p>Desaigner Database :</p>
+<div class="codehilite"><pre><span></span>Database = db_magang_2
+</pre></div>
+
+
+<p><img alt="Screenshot" src="../img/img_fungsi/a.png" /> </p>
+</li>
+<li>
+<p>Soal dan Penyelesaian :</p>
+</li>
+</ul>
+<p>Source Code (Contoh Soal)</p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.id, siswa.nama, LEFT(siswa.nama, 3) , RIGHT(siswa.nama, 3) , 
+    SUBSTRING(siswa.nama, 2, 2) ,LENGTH (siswa.nama) , LPAD(siswa.nama, 10, &#39;x&#39;) , 
+    LPAD(siswa.id, 10, &#39;0&#39;) , lcase(siswa.nama) , ucase(siswa.nama), 
+    CONCAT(&#39;Nama Saya &#39;, siswa.nama , &#39;, saya lahir di &#39;, tempat_lahir) , 
+    DATEDIFF(&#39;2014-11-30&#39;,&#39;2014-11-29&#39;) 
+    FROM siswa
+</pre></div>
+
+
+<ul>
+<li>Output
+<img alt="Screenshot" src="../img/img_fungsi/a1.png" /> </li>
+</ul>
+<p><strong>Soal : Outputnya dalam 1 kolom yang bernama Keterangan</strong></p>
+<div class="codehilite"><pre><span></span>    nama kolom as Keterangan
+    &quot;Nama saya YONDI , id saya 17000001, Saya lahir di Nganjuk , 
+    saya lahir pada 26 October 1995 dan 
+    sekarang umur saya 29 Tahun dan alamat saya JL. Diponegoro no 26 
+    kecamatan Wilangan kabupaten Nganjuk Jawa Timur &quot;
+</pre></div>
+
+
+<ul>
+<li>
+<p>Jawaban Source Code 1 (Menampilkan seluruh data)</p>
+<div class="codehilite"><pre><span></span>SELECT CONCAT(&#39;Nama Saya &#39;, UCASE(siswa.nama), &#39;, id saya &#39;, SUBSTRING(NOW(), 3, 2), LPAD(siswa.id, 6, &#39;0&#39;), &#39;, Saya lahir di &#39;, UCASE(SUBSTRING(siswa.tempat_lahir, 1,1)), LCASE(SUBSTRING(siswa.tempat_lahir, 2)), &#39;, saya lahir pada &#39;, DATE_FORMAT(siswa.tanggal_lahir, &#39;%d %M %Y&#39;), &#39; dan sekarang umur saya &#39;, 
+(YEAR(NOW()) - YEAR(tanggal_lahir)) , &#39; Tahun dan alamat saya &#39; ,UCASE(SUBSTRING(siswa.alamat, 1,4)),LCASE(SUBSTRING(siswa.alamat, 5)) , &#39; kecamatan &#39;, 
+UCASE(SUBSTRING(kecamatan.nama, 1,1)), LCASE(SUBSTRING(kecamatan.nama, 2)) , &#39; kabupaten &#39;, UCASE(SUBSTRING(kabupaten.nama, 1,1)),
+LCASE(SUBSTRING(kabupaten.nama, 2)), &#39; &#39;, UCASE(SUBSTRING(provinsi.nama, 1,1)), LCASE(SUBSTRING(provinsi.nama, 2)) ) AS Keterangan 
+FROM siswa, kecamatan, kabupaten, provinsi 
+WHERE siswa.id_kecamatan = kecamatan.id 
+AND kecamatan.id_kabupaten = kabupaten.id 
+AND kabupaten.id_provinsi = provinsi.id
+</pre></div>
+
+
+<ul>
+<li>Output :                                                                  <br />
+<img alt="Screenshot" src="../img/img_fungsi/a2.png" /></li>
+</ul>
+</li>
+<li>
+<p>Jawaban Source Code 2 (Hanya menampilkan data Yondi sesuai Tugas)</p>
+<div class="codehilite"><pre><span></span>SELECT CONCAT(&#39;Nama Saya &#39;, UCASE(siswa.nama), &#39;, id saya &#39;, SUBSTRING(NOW(), 3, 2), LPAD(siswa.id, 6, &#39;0&#39;), &#39;, Saya lahir di &#39;, UCASE(SUBSTRING(siswa.tempat_lahir, 1,1)), LCASE(SUBSTRING(siswa.tempat_lahir, 2)), &#39;, saya lahir pada &#39;, DATE_FORMAT(siswa.tanggal_lahir, &#39;%d %M %Y&#39;), &#39; dan sekarang umur saya &#39;, 
+(YEAR(NOW()) - YEAR(tanggal_lahir)) , &#39; Tahun dan alamat saya &#39; ,UCASE(SUBSTRING(siswa.alamat, 1,4)), LCASE(SUBSTRING(siswa.alamat, 5)) , &#39; kecamatan &#39;, 
+UCASE(SUBSTRING(kecamatan.nama, 1,1)), LCASE(SUBSTRING(kecamatan.nama, 2)) , &#39; kabupaten &#39;, UCASE(SUBSTRING(kabupaten.nama, 1,1)), LCASE(SUBSTRING(kabupaten.nama, 2)), &#39; &#39;, UCASE(SUBSTRING(provinsi.nama, 1,1)), LCASE(SUBSTRING(provinsi.nama, 2)) ) AS Keterangan 
+FROM siswa, kecamatan, kabupaten, provinsi 
+WHERE siswa.id_kecamatan = kecamatan.id 
+AND kecamatan.id_kabupaten = kabupaten.id 
+AND kabupaten.id_provinsi = provinsi.id
+AND siswa.nama = &#39;YONDI&#39;
+</pre></div>
+
+
+<ul>
+<li>Output :
+<img alt="Screenshot" src="../img/img_fungsi/a3.png" /></li>
+</ul>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../sql_rightJoin/" title="SQL Right Join" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                SQL Right Join
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../sql_fungsiTanggal/" title="SQL Fungsi Tanggal" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                SQL Fungsi Tanggal
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 - 2018 LKawuryan06
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/WisnuAgung" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/hildaaakh" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/KresnaNugraha" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/harendarizqi" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/fatmazahrotun9" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zhomyvic" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-b30566c560.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

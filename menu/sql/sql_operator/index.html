@@ -1,0 +1,2224 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../../../favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.3">
+    
+    
+      
+        <title>SQL Operator - Dokumentasi Magang</title>
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-acc56dad49.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-8817cfa535.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="pink" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../../.." title="Dokumentasi Magang" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  SQL
+                </span>
+              
+            
+            SQL Operator
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/WisnuAgung/mkdocs-fix" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      LKawuryan06
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Dokumentasi Magang
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/WisnuAgung/mkdocs-fix" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      LKawuryan06
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Tes Magang
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Tes Magang
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tes_magang/tesMagang/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      SQL
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        SQL
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../indexsql/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_select/" title="SQL Select" class="md-nav__link">
+      SQL Select
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_selectDistinct/" title="SQL Select Distinct" class="md-nav__link">
+      SQL Select Distinct
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_where/" title="SQL Where" class="md-nav__link">
+      SQL Where
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_andOrNot/" title="SQL And, Or, Not" class="md-nav__link">
+      SQL And, Or, Not
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_orderBy/" title="SQL Order By" class="md-nav__link">
+      SQL Order By
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_aliases/" title="SQL Alias" class="md-nav__link">
+      SQL Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_joinTabel/" title="SQL Join" class="md-nav__link">
+      SQL Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_innerJoin/" title="SQL Inner Join" class="md-nav__link">
+      SQL Inner Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_leftJoin/" title="SQL Left Join" class="md-nav__link">
+      SQL Left Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_rightJoin/" title="SQL Right Join" class="md-nav__link">
+      SQL Right Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_fungsi/" title="SQL Fungsi" class="md-nav__link">
+      SQL Fungsi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sql_fungsiTanggal/" title="SQL Fungsi Tanggal" class="md-nav__link">
+      SQL Fungsi Tanggal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SQL Operator
+      </label>
+    
+    <a href="./" title="SQL Operator" class="md-nav__link md-nav__link--active">
+      SQL Operator
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-penjelsan" title="A. Penjelsan" class="md-nav__link">
+    A. Penjelsan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-implementasi" title="B. Implementasi" class="md-nav__link">
+    B. Implementasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-1" title="Contoh Case 1" class="md-nav__link">
+    Contoh Case 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-2" title="Contoh Case 2" class="md-nav__link">
+    Contoh Case 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-3" title="Contoh Case 3" class="md-nav__link">
+    Contoh Case 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-4" title="Contoh Case 4" class="md-nav__link">
+    Contoh Case 4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      PHP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        PHP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/php/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/prosedurFungsi/" title="Prosedur dan Fungsi" class="md-nav__link">
+      Prosedur dan Fungsi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/increment/" title="Increment" class="md-nav__link">
+      Increment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/psr/" title="PSR" class="md-nav__link">
+      PSR
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Looping
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Looping
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/looping/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/for/" title="For" class="md-nav__link">
+      For
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/while/" title="While" class="md-nav__link">
+      While
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/doWhile/" title="Do While" class="md-nav__link">
+      Do While
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/looping/foreach/" title="Foreach" class="md-nav__link">
+      Foreach
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Keyword PHP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Keyword PHP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_and/" title="And" class="md-nav__link">
+      And
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_array/" title="Array" class="md-nav__link">
+      Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_break/" title="Break" class="md-nav__link">
+      Break
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_catch/" title="Catch" class="md-nav__link">
+      Catch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_class/" title="Class" class="md-nav__link">
+      Class
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_continue/" title="Continue" class="md-nav__link">
+      Continue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_doWhile/" title="Do While" class="md-nav__link">
+      Do While
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_echo/" title="Echo" class="md-nav__link">
+      Echo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_extends/" title="Extends" class="md-nav__link">
+      Extends
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_for/" title="For" class="md-nav__link">
+      For
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_foreach/" title="Foreach" class="md-nav__link">
+      Foreach
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_function/" title="Function" class="md-nav__link">
+      Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_if/" title="If" class="md-nav__link">
+      If
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_ifElse/" title="If else" class="md-nav__link">
+      If else
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_ifElseifElse/" title="If elseif else" class="md-nav__link">
+      If elseif else
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_include/" title="Include" class="md-nav__link">
+      Include
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_isset/" title="Isset" class="md-nav__link">
+      Isset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_or/" title="Or" class="md-nav__link">
+      Or
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_print/" title="Print" class="md-nav__link">
+      Print
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_private/" title="Private" class="md-nav__link">
+      Private
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_protected/" title="Protected" class="md-nav__link">
+      Protected
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_public/" title="Public" class="md-nav__link">
+      Public
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_require/" title="Require" class="md-nav__link">
+      Require
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_requireOnce/" title="Require once" class="md-nav__link">
+      Require once
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_return/" title="Return" class="md-nav__link">
+      Return
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_static/" title="Static" class="md-nav__link">
+      Static
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_switch/" title="Switch" class="md-nav__link">
+      Switch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_try/" title="Try" class="md-nav__link">
+      Try
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_unset/" title="Unset" class="md-nav__link">
+      Unset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/keyword_php/keywordPhp_while/" title="While" class="md-nav__link">
+      While
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      OOP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        OOP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../php/oop/oop/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dokumen Generator
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Dokumen Generator
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dokumen_generator/dokumenGenerator/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dokumen_generator/mkdocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Web Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Web Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/webServer/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/apache/" title="Apache" class="md-nav__link">
+      Apache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/website/" title="Website" class="md-nav__link">
+      Website
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web_server/xampp/" title="XAMPP" class="md-nav__link">
+      XAMPP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Virtual Box
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Virtual Box
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../virtual_box/virtualBox/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Linux Ubuntu
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Linux Ubuntu
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../linux_ubuntu/linuxUbuntu/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../linux_ubuntu/commandLine/" title="CommandLine" class="md-nav__link">
+      CommandLine
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github/github/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Laravel
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Laravel
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../laravel/laravel/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-penjelsan" title="A. Penjelsan" class="md-nav__link">
+    A. Penjelsan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-implementasi" title="B. Implementasi" class="md-nav__link">
+    B. Implementasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-1" title="Contoh Case 1" class="md-nav__link">
+    Contoh Case 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-2" title="Contoh Case 2" class="md-nav__link">
+    Contoh Case 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-3" title="Contoh Case 3" class="md-nav__link">
+    Contoh Case 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contoh-case-4" title="Contoh Case 4" class="md-nav__link">
+    Contoh Case 4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sql-operator"><strong>SQL Operator</strong></h1>
+<hr />
+<h2 id="a-penjelsan"><strong>A. Penjelsan</strong></h2>
+<p><strong>a. SQL Operator Aritmatika</strong> </p>
+<table>
+<thead>
+<tr>
+<th>Fungsi</th>
+<th>Kegunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>untuk menambahkan</td>
+</tr>
+<tr>
+<td>-</td>
+<td>untuk mengurangi</td>
+</tr>
+<tr>
+<td>*</td>
+<td>untuk mengkalikan</td>
+</tr>
+<tr>
+<td>/</td>
+<td>untuk membagikan</td>
+</tr>
+<tr>
+<td>%</td>
+<td>untuk modulo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>b. SQL Operator Pembanding</strong></p>
+<table>
+<thead>
+<tr>
+<th>Fungsi</th>
+<th>Kegunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>sama dengan</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>lebih besar dari</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>kurang dari</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>lebih besar dari sama dengan</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>kurang dari sama dengan</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>tidak sebanding dengan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>c. SQL Operator Logikal</strong></p>
+<table>
+<thead>
+<tr>
+<th>Fungsi</th>
+<th>Kegunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALL</td>
+<td>BENAR jika semua nilai subkueri memenuhi syarat</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>BENAR jika semua kondisi dipisahkan oleh DAN BENAR</td>
+</tr>
+<tr>
+<td>ANY</td>
+<td>BENAR jika salah satu nilai subkueri memenuhi syarat</td>
+</tr>
+<tr>
+<td>BETWEEN</td>
+<td>BENAR jika operan berada dalam kisaran perbandingan</td>
+</tr>
+<tr>
+<td>EXISTS</td>
+<td>BENAR jika subkueri mengembalikan satu atau lebih catatan</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>BENAR jika operan sama dengan salah satu daftar ungkapan</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>BENAR jika operan cocok dengan pola</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>Menampilkan catatan jika kondisinya TIDAK BENAR</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>BENAR jika salah satu kondisi dipisahkan oleh ATAU BENAR</td>
+</tr>
+<tr>
+<td>SOME</td>
+<td>BENAR jika salah satu nilai subkueri memenuhi syarat</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="b-implementasi"><strong>B. Implementasi</strong></h2>
+<h3 id="contoh-case-1">Contoh Case 1</h3>
+<ul>
+<li>
+<p>Desaigner Database :</p>
+<div class="codehilite"><pre><span></span>Database = db_magang_2
+</pre></div>
+
+
+<p><img alt="Screenshot" src="../img/img_operator/a.png" /> </p>
+</li>
+<li>
+<p>Soal dan Penyelesaian :</p>
+<div class="codehilite"><pre><span></span>Operator Pembanding : 
+1. =
+2. &lt;&gt;
+3. &gt;
+4. &lt;
+5. &gt;=
+6. &lt;=
+7. like &#39;%a&#39;
+8. like &#39;b%&#39;
+9. like &#39;%b%&#39;
+10. in(&#39;a&#39;,&#39;b&#39;)
+11. not in(&#39;a&#39;,&#39;b&#39;)
+</pre></div>
+
+
+</li>
+</ul>
+<p>Operator =</p>
+<p><strong>1. Menampilkan seluruh data dengan kolom (nama siswa = YONDI)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama = &#39;YONDI&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan seluruh data dengan kolom (nama siswa = ADIT atau yang tempat lahirnya di MALANG)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama = &#39;ADIT&#39; or tempat_lahir = &#39;MALANG&#39;
+</pre></div>
+
+
+<p><strong>3. Menampilkan seluruh data dengan kolom (nama siswa = YONDI atau yang nama siswanya = ADIT, ALI, NIZAR)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE (nama = &#39;YONDI&#39; or nama = &#39;ADIT&#39; or nama = &#39;ALI&#39; or nama = &#39;NIZAR&#39;)
+</pre></div>
+
+
+<p><strong>4. Menampilkan seluruh data dengan kolom (nama siswa = ADIT yang tempat lahirnya di MALANG)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama = &#39;ADIT&#39; and tempat_lahir = &#39;MALANG&#39;
+</pre></div>
+
+
+<p>Operator &lt;&gt; </p>
+<p><strong>Menampilkan seluruh data dengan kolom (id siswa = id ke 10)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE id &lt;&gt; 10
+</pre></div>
+
+
+<p>Operator &gt; </p>
+<p><strong>1. Menampilkan seluruh data dengan kolom (tanggal lahir lebih besar dari 1992-10-20)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &gt; &#39;1992-10-20&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan seluruh data dengan kolom (tanggal lahir lebih besar dari tahun 1992)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &gt; &#39;1992’
+</pre></div>
+
+
+<p>Operator &lt; </p>
+<p><strong>1. Menampilkan seluruh data dengan kolom (tanggal lahir kurang dari 1992-10-20)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &lt; &#39;1992-10-20&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan seluruh data dengan kolom (tanggal lahir kurang dari yang tahunnya 1992)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &lt; &#39;1992’
+</pre></div>
+
+
+<p><strong>3. Menampilkan seluruh data dengan kolom (nama siswa = ADIT yang tanggal lahirnya lebih besar dari 1992-10-20)</strong> </p>
+<div class="codehilite"><pre><span></span>    select *
+    from siswa
+    where nama = &#39;ADIT&#39; and tanggal_lahir &lt; &#39;1995-01-01&#39;
+</pre></div>
+
+
+<p>Operator &gt;= </p>
+<p><strong>1. Menampilkan seluruh data dengan kolom (tanggal lahir lebih besar dari sama dengan 1992-10-20)</strong> </p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &gt;= &#39;1992-10-20&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan seluruh data dengan kolom (tanggal lahir lebih besar dari sama dengan yang tahunnya 1992)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &gt;= &#39;1992’
+</pre></div>
+
+
+<p>Operator &lt;=</p>
+<p><strong>1. Menampilkan seluruh data dengan kolom (tanggal lahir kurang dari sama dengan 1992-10-20)</strong> </p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &lt;= &#39;1992-10-20&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan seluruh data dengan kolom (tanggal lahir kurang dari sama dengan yang tahunnya 1992)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE siswa.tanggal_lahir &lt;= &#39;1992’
+</pre></div>
+
+
+<p>Operator like 'a%'</p>
+<p><strong>Menampilkan seluruh data dengan kolom (nama siswa yang depannya huruf A)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama like &#39;a%&#39;
+</pre></div>
+
+
+<p>Operator like '%a'</p>
+<p><strong>1. Menampilkan seluruh data dengan kolom (nama siswa yang belakangnya huruf A)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama like &#39;%a&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan seluruh data dengan kolom (nama siswa yang depannya huruf A dan AB)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama like &#39;a%&#39; and nama like &#39;ab%&#39;
+</pre></div>
+
+
+<p>Operator like '%ag%' </p>
+<p><strong>Menampilkan seluruh data dengan kolom (nama siswa yang memiliki huruf AG)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama like &#39;%ag%&#39;
+</pre></div>
+
+
+<p>Operator in('a','b') </p>
+<p><strong>Menampilkan seluruh data dengan kolom (nama siswa = YONDI, ADIT)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama IN(&#39;YONDI&#39;,&#39;ADIT&#39;)
+</pre></div>
+
+
+<p>Operator not in('a','b') </p>
+<p><strong>Menampilkan seluruh data dengan selain kolom (nama siswa = YONDI, ADIT, ALI, NIZAR)</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT *
+    FROM siswa
+    WHERE nama NOT IN(&#39;YONDI&#39;,&#39;ADIT&#39;,&#39;ALI&#39;,&#39;NIZAR&#39;)
+</pre></div>
+
+
+<hr />
+<h3 id="contoh-case-2">Contoh Case 2</h3>
+<ul>
+<li>
+<p>Desaigner Database : </p>
+<div class="codehilite"><pre><span></span>Database = db_magang_2
+</pre></div>
+
+
+<p><img alt="Screenshot" src="../img/img_operator/a.png" /> </p>
+</li>
+<li>
+<p>Soal dan Penyelesaian :</p>
+<div class="codehilite"><pre><span></span>Operator Pembanding 
+1. =
+2. &lt;&gt;
+3. &gt;
+4. &lt;
+5. &gt;=
+6. &lt;=
+7. like &#39;%a&#39;
+8. like &#39;b%&#39;
+9. like &#39;%b%&#39;
+10. in(&#39;a&#39;,&#39;b&#39;)
+11. not in(&#39;a&#39;,&#39;b&#39;)
+</pre></div>
+
+
+</li>
+</ul>
+<p>Operator = </p>
+<p><strong>1. Menampilkan seluruh data dengan kolom (nama kabupaten = BLITAR)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT *
+        FROM kabupaten
+        WHERE nama = &#39;BLITAR&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan seluruh data dengan kolom (id kabupaten = id ke 4)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT *
+        FROM kabupaten
+        WHERE id = 4
+</pre></div>
+
+
+<p><strong>3. Menampilkan data dengan kolom (nama siswa = ADIT yang nama kabupatennya di KEDIRI</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nama, kabupaten.nama
+        FROM siswa INNER JOIN kabupaten
+        ON siswa.nama = &#39;ADIT&#39;AND kabupaten.nama = &#39;KEDIRI&#39;
+</pre></div>
+
+
+<p><strong>4. Menampilkan data dengan kolom (nama siswa = YONDI atau yang nama siswanya = ADIT, ALI, NIZAR)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT *
+        FROM siswa
+        WHERE (nama = &#39;YONDI&#39; or nama = &#39;ADIT&#39; or nama = &#39;ALI&#39; or nama = &#39;NIZAR&#39;)
+</pre></div>
+
+
+<p><strong>5. Menampilkan data dengan kolom (nisn siswa, nama siswa = YONDI atau yang nama siswanya = "ADIT, ALI, NIZAR", nama mata pelajaran, nilai angka dari siswa untuk nama</strong></p>
+<p><strong>NOTE : data diurutkan berdasarkan nama siswa (urut dari Z-A)</strong> </p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and siswa.nama = &#39;YONDI&#39; or siswa.nama = &#39;ADIT&#39; or siswa.nama = &#39;ALI&#39; or siswa.nama = &#39;NIZAR&#39;
+        ORDER BY siswa.nama DESC
+</pre></div>
+
+
+<p><strong>6. Menampilkan data dengan kolom (nisn siswa, nama siswa, nama mata pelajaran, nilai kecuali nilai angka dari nilai mata pelajaran untuk nilai angka (75), nama mata pelajaran yang di tampilkan adalah BAHASA INDONESIA</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and nilai_mata_pelajaran.nilai_angka &lt;&gt; 75
+        and mata_pelajaran.nama = &#39;BAHASA INDONESIA&#39;
+</pre></div>
+
+
+<p>Operator &lt;&gt; </p>
+<p><strong>1. Menampilkan data dengan selain kolom (nama kabupaten = BLITAR)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT *
+        FROM kabupaten
+        WHERE nama &lt;&gt; &#39;BLITAR&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan data dengan selain kolom (id kabupaten = id ke 4)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT *
+        FROM kabupaten
+        WHERE id &lt;&gt; 4
+</pre></div>
+
+
+<p><strong>3. Menampilkan data dengan kolom (nisn siswa, nama siswa, nama mata pelajaran, kecuali nilai angka dari nilai mata pelajaran untuk nilai angka 75)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and nilai_mata_pelajaran.nilai_angka &lt;&gt; (75)
+</pre></div>
+
+
+<p>Operator &gt; **</p>
+<p><strong>Menampilkan data dengan kolom (nisn siswa, nama siswa, nama mata pelajaran, nilai angka lebih besar dari nilai mata pelajaran untuk nilai angka 75)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and nilai_mata_pelajaran.nilai_angka &gt; (75)
+</pre></div>
+
+
+<p>Operator &lt; </p>
+<p><strong>Menampilkan data dengan kolom (nisn siswa, nama siswa, nama mata pelajaran, nilai angka kurang dari nilai mata pelajaran untuk nilai angka 75)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and nilai_mata_pelajaran.nilai_angka &lt; (75)
+</pre></div>
+
+
+<p>Operator &gt;= </p>
+<p><strong>Menampilkan data dengan kolom (nisn siswa, nama siswa, nama mata pelajaran, nilai angka lebih besar dari samadengan nilai mata pelajaran untuk nilai angka 75)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and nilai_mata_pelajaran.nilai_angka &gt;= (75)
+</pre></div>
+
+
+<p>Operator &lt;= </p>
+<p><strong>Menampilkan data dengan kolom (nisn siswa, nama siswa, nama mata pelajaran, nilai angka kurang dari samadengan nilai mata pelajaran untuk nilai angka 75)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and nilai_mata_pelajaran.nilai_angka &lt;= (75)
+</pre></div>
+
+
+<p>Operator Like '%I' </p>
+<p><strong>1. Menampilkan data dengan kolom (nama siswa, nama agama, nama provinsi, nama kabupaten dan tanggal lahir siswa untuk nama siswa yang huruf belakangnya"AD")</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nama, agama.nama, provinsi.nama, kabupaten.nama, siswa.tanggal_lahir 
+        FROM siswa, agama, provinsi, kabupaten , kecamatan
+        WHERE siswa.id_agama = agama.id 
+        and siswa.id_kecamatan = kecamatan.id 
+        and kecamatan.id_kabupaten = kabupaten.id 
+        and kabupaten.id_provinsi = provinsi.id 
+        and siswa.nama LIKE &#39;%I&#39;
+</pre></div>
+
+
+<p><strong>2. Menampilkan data dengan kolom (nama siswa, nama agama, nama provinsi, nama kabupaten dan tanggal lahir siswa untuk nama siswa yang huruf belakangnya"AD")</strong> </p>
+<p>**NOTE : data diurutkan berdasarkan nama siswa (urut dari Z-A)  </p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nama, agama.nama, provinsi.nama, kabupaten.nama, siswa.tanggal_lahir 
+        FROM siswa, agama, provinsi, kabupaten , kecamatan
+        WHERE siswa.id_agama = agama.id 
+        and siswa.id_kecamatan = kecamatan.id 
+        and kecamatan.id_kabupaten = kabupaten.id 
+        and kabupaten.id_provinsi = provinsi.id 
+        and siswa.nama LIKE &#39;%I&#39;
+        ORDER BY siswa.nama DESC
+</pre></div>
+
+
+<p>Operator Like 'AD%'</p>
+<p><strong>Menampilkan data dengan kolom (nama siswa, nama agama, nama provinsi, nama kabupaten dan tanggal lahir siswa untuk nama siswa yang huruf depannya "AD")</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nama, agama.nama, provinsi.nama, kabupaten.nama, siswa.tanggal_lahir 
+        FROM siswa, agama, provinsi, kabupaten , kecamatan
+        WHERE siswa.id_agama = agama.id 
+        and siswa.id_kecamatan = kecamatan.id 
+        and kecamatan.id_kabupaten = kabupaten.id 
+        and kabupaten.id_provinsi = provinsi.id 
+        and siswa.nama LIKE &#39;AD%&#39;
+</pre></div>
+
+
+<p>Operator Like '%DI%' </p>
+<p><strong>Menampilkan data dengan kolom (nama siswa, nama agama, nama provinsi, nama kabupaten dan tanggal lahir siswa untuk nama siswa yang ada huruf "DI")</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nama, agama.nama, provinsi.nama, kabupaten.nama, siswa.tanggal_lahir 
+        FROM siswa, agama, provinsi, kabupaten , kecamatan
+        WHERE siswa.id_agama = agama.id 
+        and siswa.id_kecamatan = kecamatan.id 
+        and kecamatan.id_kabupaten = kabupaten.id 
+        and kabupaten.id_provinsi = provinsi.id 
+        and siswa.nama LIKE &#39;%DI%&#39;
+</pre></div>
+
+
+<p>Operator in () </p>
+<p><strong>Menampilkan data dengan kolom (nisn siswa, nama siswa, nama mata pelajaran, nilai angka dari nilai mata pelajaran untuk nilai angka 90 dan 75)</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nisn, siswa.nama, mata_pelajaran.nama, nilai_mata_pelajaran.nilai_angka
+        FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+        WHERE siswa.id = nilai_mata_pelajaran.id_siswa 
+        and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+        and nilai_mata_pelajaran.nilai_angka IN (90,75)
+</pre></div>
+
+
+<p>Operator not in () </p>
+<p><strong>Menampilkan data dengan kolom (nama siswa, nama agama, nama provinsi, nama kabupaten dan tanggal lahir siswa untuk selain nama siswa (ADIT, ADITYA, ALI, ARIF))</strong></p>
+<div class="codehilite"><pre><span></span>        SELECT siswa.nama, agama.nama, provinsi.nama, kabupaten.nama, siswa.tanggal_lahir 
+        FROM siswa, agama, provinsi, kabupaten , kecamatan
+        WHERE siswa.id_agama = agama.id 
+        and siswa.id_kecamatan = kecamatan.id 
+        and kecamatan.id_kabupaten = kabupaten.id 
+        and kabupaten.id_provinsi = provinsi.id 
+        and siswa.nama NOT IN (&#39;ADIT&#39;, &#39;ADITYA&#39;, &#39;ALI&#39;, &#39;ARIF&#39;)
+</pre></div>
+
+
+<hr />
+<h3 id="contoh-case-3">Contoh Case 3</h3>
+<ul>
+<li>
+<p>Desaigner Database </p>
+<div class="codehilite"><pre><span></span>Database = db_magang_2
+</pre></div>
+
+
+<p><img alt="Screenshot" src="../img/img_operator/a.png" />  </p>
+</li>
+<li>
+<p>Soal dan Penyelesaian</p>
+</li>
+</ul>
+<p><strong>1. Menampilkan nama yg tidak memiliki sertifikat dan memiliki sertifikat</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nama , sertifikat_siswa.nama_sertifikat 
+    FROM siswa LEFT JOIN sertifikat_siswa 
+    ON (sertifikat_siswa.id_siswa = siswa.id)
+</pre></div>
+
+
+<p><strong>2. Menampilkan nama yg tidak memiliki sertifikat dengan NULL</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nama , sertifikat_siswa.nama_sertifikat 
+    FROM siswa left join sertifikat_siswa ON (sertifikat_siswa.id_siswa = siswa.id) 
+    WHERE sertifikat_siswa.nama_sertifikat is NULL
+</pre></div>
+
+
+<p><strong>3. Menampilkan nama yg tidak memiliki sertifikat hanya nama saja</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nama
+    FROM siswa
+    WHERE siswa.id not in(select id_siswa from sertifikat_siswa)
+</pre></div>
+
+
+<p><strong>4. Menampilkan nama yg memiliki sertifikat</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nama , sertifikat_siswa.nama_sertifikat 
+    FROM siswa LEFT JOIN sertifikat_siswa ON (sertifikat_siswa.id_siswa = siswa.id) 
+    WHERE sertifikat_siswa.nama_sertifikat is not NULL
+</pre></div>
+
+
+<p><strong>5. Menampilkan yang tidak memiliki sertifikat, dengan Sub query, nilai lebih 80, mata pelajaran Matematika</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nisn as &#39;nisn_siswa&#39;,
+    siswa.nama as &#39;nama_siswa&#39;,
+    mata_pelajaran.nama as &#39;nama_matkul&#39;,
+    nilai_mata_pelajaran.nilai_angka as &#39;nilai_angka&#39;
+    FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+    WHERE (siswa.id = nilai_mata_pelajaran.id_siswa 
+    and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran) 
+    and siswa.id not in (select id_siswa FROM sertifikat_siswa) 
+    and nilai_mata_pelajaran.nilai_angka &gt; 80 
+    and mata_pelajaran.nama = &#39;MATEMATIKA&#39;
+    ORDER BY siswa.nama;
+</pre></div>
+
+
+<p><strong>6. Menampilkan yang tidak memiliki sertifikat, dengan Sub query, nilai lebih 80, mata pelajaran Matematika, kabupaten Nganjuk</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nisn as &#39;nisn_siswa&#39;,
+    siswa.nama as &#39;nama_siswa&#39;,
+    mata_pelajaran.nama as &#39;nama_matkul&#39;,
+    nilai_mata_pelajaran.nilai_angka as &#39;nilai_angka&#39;
+    FROM siswa, mata_pelajaran, nilai_mata_pelajaran
+    WHERE (siswa.id = nilai_mata_pelajaran.id_siswa 
+    and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran) 
+    and siswa.id not in (select id_siswa FROM sertifikat_siswa) 
+    and nilai_mata_pelajaran.nilai_angka &gt; 80 
+    and mata_pelajaran.nama = &#39;MATEMATIKA&#39;
+    and id_kecamatan in(
+           select id from kecamatan where id_kabupaten in(
+                 select id from kabupaten where nama = &#39;NGANJUK&#39;
+           ) 
+    )
+    ORDER BY siswa.nama;
+</pre></div>
+
+
+<p><strong>7. Menampilkan yang tidak memiliki sertifikat, tidak dengan Sub query, nilai lebih 80, mata pelajaran Matematika, kabupaten Nganjuk</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nisn as &#39;nisn_siswa&#39;,
+    siswa.nama as &#39;nama_siswa&#39;,
+    mata_pelajaran.nama as &#39;nama_matkul&#39;,
+    nilai_mata_pelajaran.nilai_angka as &#39;nilai_angka&#39;
+    FROM siswa, mata_pelajaran, nilai_mata_pelajaran , kecamatan , kabupaten
+    WHERE (siswa.id = nilai_mata_pelajaran.id_siswa 
+    and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran) 
+    and siswa.id not in (select id_siswa FROM sertifikat_siswa) 
+    and nilai_mata_pelajaran.nilai_angka &gt; 80 
+    and mata_pelajaran.nama = &#39;MATEMATIKA&#39;
+    and siswa.id_kecamatan = kecamatan.id 
+    and kabupaten.id = kecamatan.id_kabupaten
+    and kabupaten.nama = &#39;NGANJUK&#39;
+</pre></div>
+
+
+<p><strong>8. Menampilkan yang tidak memiliki sertifikat, tidak dengan Sub query, lebih dari 50, nama sertifikat terisi Null, diurutkan melalui Nama</strong></p>
+<div class="codehilite"><pre><span></span>    SELECT siswa.nama, siswa.tanggal_lahir, agama.nama, kabupaten.nama, provinsi.nama, mata_pelajaran.nama, 
+    nilai_mata_pelajaran.nilai_angka ,sertifikat_siswa.nama_sertifikat
+    FROM siswa left join sertifikat_siswa on sertifikat_siswa.id_siswa = siswa.id , agama, kecamatan, kabupaten, provinsi, nilai_mata_pelajaran, mata_pelajaran
+    WHERE siswa.id_agama = agama.id 
+    and siswa.id_kecamatan = kecamatan.id 
+    and kecamatan.id_kabupaten = kabupaten.id 
+    and kabupaten.id_provinsi = provinsi.id 
+    and nilai_mata_pelajaran.id_siswa = siswa.id 
+    and mata_pelajaran.id = nilai_mata_pelajaran.id_mata_pelajaran 
+    and nilai_mata_pelajaran.nilai_angka &gt;50 and sertifikat_siswa.id_siswa is NULL
+    ORDER BY siswa.nama;
+</pre></div>
+
+
+<h3 id="contoh-case-4">Contoh Case 4</h3>
+<ul>
+<li>
+<p>Desaigner Database :</p>
+<div class="codehilite"><pre><span></span>Database = db_magang_2.1
+</pre></div>
+
+
+<p><img alt="Screenshot" src="../img/img_operator/b.png" /> </p>
+</li>
+<li>
+<p>Soal dan Jawaban Case :</p>
+<div class="codehilite"><pre><span></span><span class="n">Soal</span> <span class="o">:</span>
+<span class="n">Tampilan</span> <span class="n">Output</span> <span class="n">Semua</span> <span class="n">data</span> <span class="o">(</span><span class="n">nama</span><span class="o">,</span><span class="n">panjang</span><span class="o">,</span><span class="n">lebar</span><span class="o">,</span><span class="n">luas</span><span class="o">,</span><span class="n">volume</span><span class="o">,</span><span class="n">volume_2_angka_dibelakang_koma</span><span class="o">)</span>
+
+<span class="n">Keterangan</span> <span class="n">Database</span> <span class="o">:</span>
+<span class="n">create</span> <span class="n">table</span> <span class="n">object_balok</span><span class="o">(</span>
+<span class="n">nama</span> <span class="n">varchar</span><span class="o">(</span><span class="mi">20</span><span class="o">)</span>
+<span class="n">panjang</span> <span class="n">decimal</span><span class="o">(</span><span class="mi">18</span><span class="o">,</span><span class="mi">2</span><span class="o">)</span>
+<span class="n">lebar</span> <span class="n">decimal</span><span class="o">(</span><span class="mi">18</span><span class="o">,</span><span class="mi">2</span><span class="o">)</span>
+<span class="n">tinggi</span> <span class="n">decimal</span><span class="o">(</span><span class="mi">18</span><span class="o">,</span><span class="mi">2</span><span class="o">)</span>
+<span class="o">)</span>
+</pre></div>
+
+
+</li>
+</ul>
+<p><strong> Tampilan output Semua data (nama,panjang,lebar,luas,volume,volume_2_angka_dibelakang_koma)</strong></p>
+<ul>
+<li>
+<p>Source Code </p>
+<div class="codehilite"><pre><span></span>SELECT nama, panjang, lebar, tinggi, 2*((panjang*lebar)+(panjang*tinggi)+(lebar*tinggi)) AS &#39;Luas&#39;,panjang*lebar*tinggi AS &#39;Volume&#39;,
+ROUND(panjang*lebar*tinggi,2) AS &#39;Volume_2_angka_dibelakang_koma&#39;
+FROM object_balok
+</pre></div>
+
+
+</li>
+<li>
+<p>Output                       <br />
+<img alt="Screenshot" src="../img/img_operator/b1.png" /> </p>
+</li>
+</ul>
+<hr />
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../sql_fungsiTanggal/" title="SQL Fungsi Tanggal" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                SQL Fungsi Tanggal
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../php/php/" title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Home
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 - 2018 LKawuryan06
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/WisnuAgung" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/hildaaakh" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/KresnaNugraha" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/harendarizqi" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/fatmazahrotun9" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zhomyvic" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-b30566c560.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
