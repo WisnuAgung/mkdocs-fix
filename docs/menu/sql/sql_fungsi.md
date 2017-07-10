@@ -10,8 +10,6 @@ SQL Fungsi Agregasi adalah untuk mengembalikan satu nilai, dihitung dari nilai d
 |------------ | ------------------------------------------------------- | ----------------------------------------------------- |
 |   AVG()     | untuk mencari rata-rata nilai 							| SELECT AVG(harga) AS Harga_rata2 FROM order			|
 |   COUNT()   | untuk menghitung jumlah record (baris) 					| SELECT COUNT(id) AS Jumlah_tamu FROM bukutamu 		|
-|   FIRST()   | untuk mencari nilai pertama								| SELECT FIRST(id) from bukutamu						|
-|   LAST()    | untuk mencari nilai pertama  							| SELECT LAST(id) from bukutamu					    	|
 |   MAX()     | untuk mencari nilai terakhir 							| SELECT MAX(harga) AS Harga_termahal FROM order        |
 |   MIN()     | untuk mencari nilai terkecil 							| SELECT MIN(harga) AS Harga_termurah FROM order        |
 |   ROUND()   | untuk membulatkan angka ke jumlah digit yang ditentukan | SELECT no_mhs,ROUND(nilai,0)as nilai bulat FROM nilai |
