@@ -10,30 +10,29 @@
 | CURDATE()   	  | untuk mendapatkan informasi tanggal saat ini			    				                                          | 
 | CURTIME()       | untuk mendapatkan informasi jam saat ini  																			  |
 | DATE()          | untuk Ekstrak bagian tanggal dari tanggal atau tanggal / ekspresi waktu												  |
-| EXTRACT()       | untuk mendapatkan informasi bagian-bagian dari data waktu tertentu, seperti tahun, bulan, hari, jam, menit, dan detik |
 | DATE_ADD()      | untuk menambahkan interval waktu tertentu pada sebuah tanggal 									                      |
 | DATE_SUB()      | untuk untuk pengurangan sebuah tanggal dengan interval tertentu 								 					  |
 | DATEDIFF()      | untuk mendapatkan informasi waktu di antara 2 buah tanggal          					 		            		  |
 | DATE_FORMAT()   | untuk untuk menampilkan informasi jam dan tanggal dengan format tertentu                                              |  			    				
 
-**b. SQL Server Fungsi Tanggal**
+**b. Date Format**
 
-| Fungsi   		  | Kegunaan                                               						  |
-|-----------------| ----------------------------------------------------------------------------- |
-| GETDATE()  	  | untuk mengembalikan tanggal dan waktu sekarang							      |
-| DATEPART()   	  | untuk mengembalikan satu bagian dari tanggal / waktu			    		  |		              
-| DATEADD()       | untuk menambahkan atau mengurangi interval waktu yang ditentukan dari tanggal |
-| DATEDIFF()      | untuk mendapatkan informasi waktu di antara 2 buah tanggal 	                  |
-| CONVERT()       | untuk mengkonversi dari satu karakter set menjadi karakter set yang lain      | 
+| Fungsi  | Kegunaan                                               			  |
+|---------| ----------------------------------------------------------------------------- |
+| %a  	  | Nama hari kerja yang disingkat (Sun to Sat)				  	  |
+| %b   	  | Nama bulan yang disingkat (Jan to Dec)			  		  |		              
+| %c      | Nama bulan numerik (0 sampai 12) 						  |
+| %d      | Hari dalam sebulan sebagai nilai numerik (01 sampai 31)	                  |
+| %H      | Hour (00-23)      								  | 
+| %h      | Jam (00 sampai 12)    							  | 
+| %M      | Bulan nama secara penuh (Januari sampai Desember)     			  | 
+| %m      | Nama bulan sebagai nilai numerik (00 sampai 12)      			  | 
+| %p      | AM atau PM    								  | 
+| %W      | Nama hari kerja secara penuh (Minggu sampai Sabtu)      			  | 
+| %Y      | Tahun sebagai angka, nilai 4 digit     					  | 
+| %y      | Tahun sebagai angka, nilai 2 digit   					  | 
 
-**c. SQL Tipe Data Fungsi Tanggal dan Waktu**
-
-| Fungsi   		  | Kegunaan                                               		 |
-|-----------------| ------------------------------------------------------------ |
-| FORMAT()  	  | untuk memformat sebuah nomor 								 |
-| NOW()   	      | untuk mendapatkan informasi waktu (tanggal dan jam saat ini) | 
-
-**d. SQL Tipe Data Tanggal**
+**c. SQL Tipe Data Tanggal**
 
 * MySQL dilengkapi dengan tipe data berikut untuk menyimpan tanggal atau tanggal / nilai waktu dalam database:
 
