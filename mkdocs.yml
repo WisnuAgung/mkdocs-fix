@@ -9,6 +9,7 @@ theme : material
 markdown_extensions :
   - codehilite
 extra:
+  logo : 'img/logo.png'
   palette:
     primary: 'pink'
     accent: 'light-blue'
